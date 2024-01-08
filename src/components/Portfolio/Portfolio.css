@@ -1,0 +1,24 @@
+.portimage img{
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+     box-shadow: 1px 1px 30px black;
+     padding: 0;
+     margin: auto;
+}
+.portimage h1{
+    background :linear-gradient(to top right,#AE8625,#F7EF8A,#D2AC47,#EDC967,#F7EF8A);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+}
+.portimage button{
+    border:3px solid #D2AC47 ;
+    padding: 0.7rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    color:white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}

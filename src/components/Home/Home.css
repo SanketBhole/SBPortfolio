@@ -1,0 +1,84 @@
+.home{
+    width: 10rem;
+    background-color: #ffffff10; 
+     backdrop-filter :blur(12px); 
+     color:white;
+     border-radius: 20px;
+     box-shadow: 1px 1px 30px black;
+}
+.center {
+    margin:  7vw auto;
+}
+/* Provide an Golden COmbination Border to Image */
+.myimg{
+    border:10px solid transparent ;
+    border-radius: 50% !important;
+    background: linear-gradient(45deg, #AE8625,#AE8625,#F7EF8A,#D2AC47,#EDC967), 
+              linear-gradient(45deg, #AE8625,#AE8625,#F7EF8A,#D2AC47,#EDC967);
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat; /* this is important */
+    
+}
+/* Providing Gradient To Name */
+.home .myName{
+    background :linear-gradient(to top right,#AE8625,#F7EF8A,#D2AC47,#EDC967,#F7EF8A);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animation OF Hand Wave */
+.handwave{
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: hand_wave;
+    display: inline-block;
+    transform-origin: 70% 70%;
+}
+@keyframes hand_wave {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+    transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Anchor tag CSS */
+.home a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+@media (max-width: 400px) {
+    .home a{
+      font-size:2rem;
+    }
+}
+
+.home ul li{
+    list-style:none;
+   font-size: 1rem;
+   font-weight: normal;
+   padding:0.3rem;
+}
+

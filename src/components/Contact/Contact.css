@@ -1,0 +1,72 @@
+.firstsection{
+    background-color: #ffffff10; 
+     backdrop-filter :blur(12px); 
+     color:white;
+     border-radius: 20px;
+     box-shadow: 1px 1px 30px black;
+}
+.firstsection a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    padding-right: 1rem;
+}
+.firstsection h1{
+    background :linear-gradient(to top right,#AE8625,#F7EF8A,#D2AC47,#EDC967,#F7EF8A);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+.firstsection h3{
+    background :linear-gradient(to top right,#AE8625,#F7EF8A,#D2AC47,#EDC967,#F7EF8A);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+.firstsection h1{
+    font-weight: bold;
+}
+.firstsection h4{
+    padding-left: 3rem;
+    font-weight: lighter;
+}
+.firstsection img{
+       font-size: 1rem;
+       font-weight: normal;
+       padding:0.3rem;
+}
+.formsection h1{
+    background :linear-gradient(to top right,#AE8625,#F7EF8A,#D2AC47,#EDC967,#F7EF8A);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.firstsection .iconset{
+    padding-left: 3rem !important;
+}
+.formsection .form-control{
+    background: linear-gradient(45deg,#4d4d4d,#d8d8d8,#ffffff,#d8d8d8,#4d4d4d), 
+              linear-gradient(45deg,#4d4d4d,#d8d8d8,#ffffff,#d8d8d8,#4d4d4d);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: black;
+    backdrop-filter: blur(4px);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+#submit button{
+    border:3px solid silver ;
+    padding: 0.7rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    color: silver;
+    backdrop-filter: blur(4px);
+    font-size: 1.3rem;
+}
+@media (min-width: 577px) {
+    .maindiv{
+        margin-top: 2rem !important;    
+    }
+}

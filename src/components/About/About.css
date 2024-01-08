@@ -1,0 +1,97 @@
+#aboutsection a{
+    text-decoration: none;
+    background :linear-gradient(#4d4d4d,#fff,#4d4d4d);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    color:white;
+    font-size: 1.3rem;
+}
+#aboutsection #content{
+    padding-left: 20px;
+}
+#aboutsection .about-title {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#aboutsection .about-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #82909c;
+    position: relative;
+
+}
+#aboutsection h4{
+    color: grey;
+}
+#aboutsection h1{
+    background :linear-gradient(to top right,#AE8625,#F7EF8A,#D2AC47,#EDC967,#F7EF8A);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+#aboutsection h3{
+    background :linear-gradient(#4d4d4d,#fff,#4d4d4d);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+#aboutsection .about-item::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    left: -14px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #D2AC47;
+    background-color:#4d4d4d;
+    backdrop-filter: blur(12px) ;
+}
+@media (min-width : 991px) {
+    #aboutsection .mainrow{
+        height:39vw;    
+        padding-bottom: 0px !important;
+    }
+    
+}
+#aboutsection .progressbars .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+#aboutsection .progressbars .progress-bar-wrap {
+    background: #ffffff;
+}
+#aboutsection .progressbars .progress-bar {
+    width: 10px;
+    height: 10px;
+    transition: 2s;
+    background-color: goldenrod;
+}
+#aboutsection .progressbars .progress .skill {
+    font-size: 1rem;
+    padding: 10px 0;
+    margin: 0 0 -6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+}
+#aboutsection .progressbars .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.overflow-y::-webkit-scrollbar{
+    display: none;
+}
+.overflow-y{
+    height: 100%;
+    overflow-y:scroll;
+}
+@media (max-width : 991px){
+#aboutsection .about-item{
+ backdrop-filter :blur(12px); 
+ padding-right: 10px;
+}}
