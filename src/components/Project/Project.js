@@ -4,7 +4,7 @@ import portfolio from '../../images/portfolio.jpg';
 import textutil from '../../images/textutils.jpg';
 import icmmt from '../../images/icmmt.jpg';
 import clicko from '../../images/clicko.jpg';
-import '../Portfolio/Portfolio.css'
+import './Project.css'
 import {PiCodeBold} from 'react-icons/pi'
 import {IoIosEye} from 'react-icons/io'
 
@@ -21,7 +21,7 @@ const pageVariants = {
     y:"100%"
   },
 }
-export default function Portfolio() {
+export default function Project() {
   return (
     <motion.div className='text-light portimage ' initial="out" animate="in" exit="out" variants={pageVariants}>
       <div className="container text-center p-3" >

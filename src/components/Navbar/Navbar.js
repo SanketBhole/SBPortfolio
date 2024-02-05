@@ -13,7 +13,7 @@ export default function Navbar(props) {
                 <li><Link className=' hvr-underline-from-center' to="/" >Home</Link></li>
                 <li><Link className=' hvr-underline-from-center' to="/about" >About</Link></li>
                 <li><Link to="/"><img className='logo' src={mySB} width={60} height={60} alt=""/></Link></li>
-                <li><Link className=' hvr-underline-from-center' to="/portfolio" >Portfolio</Link></li>
+                <li><Link className=' hvr-underline-from-center' to="/projects" >Projects</Link></li>
                 <li><Link className=' hvr-underline-from-center' to="/contact" >Contact</Link> </li>
             </ul>
         </div>
