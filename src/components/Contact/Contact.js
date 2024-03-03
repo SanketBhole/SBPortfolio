@@ -11,9 +11,9 @@ import phonelogo from '../../images/phoneicon.png'
 import connectlogo from '../../images/connect.png'
 
 //Firebase Imports
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 const pageVariants = {
   in: {
@@ -33,17 +33,17 @@ export default function Contact() {
   let navigate = useNavigate();
 
   // Initialize Firebase
-  const app = initializeApp({
-    apiKey: "AIzaSyA3FPut_uN6OclPrSFU0OraEhnWFfDMUaM",
-  authDomain: "sportfoliob.firebaseapp.com",
-  projectId: "sportfoliob",
-  storageBucket: "sportfoliob.appspot.com",
-  messagingSenderId: "369047986987",
-  appId: "1:369047986987:web:fb1a18f6e9a621bb95db6e",
-  measurementId: "G-J626JNE2X7"
-  });
-  const analytics = getAnalytics(app);
-  const db = getFirestore(app);
+  // const app = initializeApp({
+  //   apiKey: "AIzaSyA3FPut_uN6OclPrSFU0OraEhnWFfDMUaM",
+  // authDomain: "sportfoliob.firebaseapp.com",
+  // projectId: "sportfoliob",
+  // storageBucket: "sportfoliob.appspot.com",
+  // messagingSenderId: "369047986987",
+  // appId: "1:369047986987:web:fb1a18f6e9a621bb95db6e",
+  // measurementId: "G-J626JNE2X7"
+  // });
+  // const analytics = getAnalytics(app);
+  // const db = getFirestore(app);
 
   const [contact, setContact] = useState({
     name:"",
@@ -59,36 +59,36 @@ export default function Contact() {
     setContact({ ...contact, [e.target.name]: e.target.value });
   };
 
-  // const onSubmit = async (e) => {
-  //   e.preventDefault();
-  //   // await axios.post("http://localhost:8081/contact/add", contact);
-  //   await axios.post("https://sbportfolio-contact.onrender.com/contact/add", contact);
-  //   alert("Message Send Successfully");
-  //   navigate("/");
-  // };
-
-  //Firebase Submit Function
   const onSubmit = async (e) => {
     e.preventDefault();
-
-    try {
-      // Add data to the 'contacts' collection in Firestore
-      const docRef = await addDoc(collection(db, "contacts"), {
-        name: name,
-        mobile: mobile,
-        cname: cname,
-        cemail: cemail,
-        message: message,
-      });
-
-      console.log("Document written with ID: ", docRef.id);
-      alert("Message Sent Successfully");
-      navigate("/");
-    } catch (error) {
-      console.error("Error adding document: ", error);
-      alert("Error sending message. Please try again later.");
-    }
+    // await axios.post("http://localhost:8081/contact/add", contact);
+    await axios.post("https://sbportfolio-contact.onrender.com/contact/add", contact);
+    alert("Message Send Successfully");
+    navigate("/");
   };
+
+  // //Firebase Submit Function
+  // const onSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   try {
+  //     // Add data to the 'contacts' collection in Firestore
+  //     const docRef = await addDoc(collection(db, "contacts"), {
+  //       name: name,
+  //       mobile: mobile,
+  //       cname: cname,
+  //       cemail: cemail,
+  //       message: message,
+  //     });
+
+  //     console.log("Document written with ID: ", docRef.id);
+  //     alert("Message Sent Successfully");
+  //     navigate("/");
+  //   } catch (error) {
+  //     console.error("Error adding document: ", error);
+  //     alert("Error sending message. Please try again later.");
+  //   }
+  // };
 
   return (
     <motion.div  className='text-light' id="contact_detail" initial="out" animate="in" exit="out" variants={pageVariants}>
