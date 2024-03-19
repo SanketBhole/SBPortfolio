@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import About from './components/About/About';
 import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
+import ContactManager from './components/ContactManager/ContactManager';
 import { AnimatePresence } from "framer-motion";
 import {
   BrowserRouter,
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/about" element={<About/>}/>
         <Route exact path="/projects" element={<Project/>}/>
         <Route exact path="/contact" element={<Contact/>}/>
+        <Route exact path="/contactmanager" element={<ContactManager/>}/>
       </Routes>
       </AnimatePresence>
     </BrowserRouter>

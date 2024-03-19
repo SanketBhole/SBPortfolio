@@ -29,10 +29,10 @@ export default function Home() {
     <>
     <motion.div className="container center" initial="initial" animate="in" exit="out" variants={pageVariants}>
       <div className="row justify-content-center m-2 outerdiv">
-        <div className="col-sm-3 align-self-center text-center p-3">
+        <div className="col-12 col-sm-12 col-md-4 align-self-center text-center p-3">
           <img className='myimg' src={myImg} width={200} height={200} alt=""/>
         </div>
-        <div className="col-sm-5 align-self-center  home p-2">
+        <div className="col-12 col-sm-12 col-md-6 align-self-center  home p-2">
           <h1 className='display-5' style={{fontWeight:'bold'}}>Hi, I'm <span className='myName'> SANKET </span><span className="handwave">🤚</span></h1>
           <h1 className='display-7' style={{fontWeight:'bold'}}>I'm a Full Stack Developer.</h1>
           <ul className="list">

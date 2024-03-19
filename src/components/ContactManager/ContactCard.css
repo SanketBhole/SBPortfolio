@@ -1,0 +1,13 @@
+/* Add this to your CSS file or style tag in the component */
+.glass-card {
+    background-color: #ffffff10; 
+       backdrop-filter :blur(12px); 
+       color:white;
+       border-radius: 20px;
+       box-shadow: 1px 1px 30px black;
+  }
+  
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.5); /* Adjust the opacity for hover state */
+  }
+  

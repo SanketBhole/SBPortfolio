@@ -1,0 +1,9 @@
+/* Add this to your CSS file or style tag in the component */
+#glassCard {
+  background-color: #ffffff10; 
+  backdrop-filter :blur(12px); 
+  color:white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px black;
+  transition: background 0.3s ease-in-out;
+}
